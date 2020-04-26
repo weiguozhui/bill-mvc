@@ -45,3 +45,24 @@ spring springMVC整合
 
 文件解析
 
+git 的使用
+初始化git
+git init
+添加readme.md
+git add README.md
+检查文件夹下第一次上传的文件
+git commit -m "first commit"
+添加分支
+git remote add origin https://github.com/weiguozhui/bill-mvc.git
+标记要添加的文件
+git add ./bill-mvc
+查看git的状态
+git status
+提交第一次新增的文件
+git commit -m "first commit"
+push到远程
+git push -u origin master
+
+更新当前文件，或是添加指定文件 .代表所有
+git add .
+
