@@ -65,4 +65,8 @@ git push -u origin master
 
 更新当前文件，或是添加指定文件 .代表所有
 git add .
+ commit -m "描述"
+git commit -m "update"
 
+push到远端
+git push
