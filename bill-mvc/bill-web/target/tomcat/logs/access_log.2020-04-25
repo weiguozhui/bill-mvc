@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:21:10:49 +0800] "GET /bill-web HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:21:10:50 +0800] "GET /bill-web/ HTTP/1.1" 200 2695 http-bio-8080-exec-3 1732
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:21:10:51 +0800] "GET /bill-web/css/index.css HTTP/1.1" 304 - http-bio-8080-exec-4 37
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:21:10:53 +0800] "GET /bill-web/auth/code HTTP/1.1" 200 1628 http-bio-8080-exec-2 2266
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:21:10:53 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-6 0
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:21:11:03 +0800] "POST /bill-web/login/login HTTP/1.1" 200 3525 http-bio-8080-exec-7 228
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:21:11:03 +0800] "GET /bill-web/css/billInfo/billInfo.css HTTP/1.1" 304 - http-bio-8080-exec-8 8
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:21:11:09 +0800] "GET /bill-web/file/download HTTP/1.1" 200 3745988 http-bio-8080-exec-9 245
+0:0:0:0:0:0:0:1 - - [25/Apr/2020:21:11:35 +0800] "POST /bill-web/file/upload HTTP/1.1" 200 7 http-bio-8080-exec-10 54

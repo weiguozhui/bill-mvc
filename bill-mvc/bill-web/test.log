@@ -1,0 +1,238 @@
+2020-03-30 23:28:39 INFO  DispatcherServlet:489 - FrameworkServlet 'springMVC': initialization started
+2020-03-30 23:28:39 INFO  XmlWebApplicationContext:578 - Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Mar 30 23:28:39 CST 2020]; root of context hierarchy
+2020-03-30 23:28:39 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-03-30 23:28:39 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-03-30 23:28:39 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/auth/code]}" onto public void com.wgz.bill.controller.AuthCodeController.getCode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.io.IOException
+2020-03-30 23:28:39 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/upload]}" onto public java.lang.String com.wgz.bill.controller.FileUpload.fileUpload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-03-30 23:28:39 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/download]}" onto public org.springframework.http.ResponseEntity<byte[]> com.wgz.bill.controller.FileUpload.fileDowndload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-03-30 23:28:39 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/bill-web]}" onto public java.lang.String com.wgz.bill.controller.HomePageController.homePage()
+2020-03-30 23:28:39 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/login/login]}" onto public java.lang.String com.wgz.bill.controller.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-30 23:28:39 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/hello],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.wgz.bill.controller.TestController.Test()
+2020-03-30 23:28:39 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Mar 30 23:28:39 CST 2020]; root of context hierarchy
+2020-03-30 23:28:39 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Mar 30 23:28:39 CST 2020]; root of context hierarchy
+2020-03-30 23:28:40 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/bill-web] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-03-30 23:28:40 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-03-30 23:28:40 INFO  DispatcherServlet:508 - FrameworkServlet 'springMVC': initialization completed in 1077 ms
+2020-03-30 23:28:45 INFO  FileUpload:382 - info file
+2020-03-30 23:28:45 ERROR FileUpload:382 - error file
+2020-03-30 23:28:45 WARN  FileUpload:382 - warn file
+2020-04-19 23:35:52 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2020-04-19 23:35:52 INFO  XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sun Apr 19 23:35:52 CST 2020]; root of context hierarchy
+2020-04-19 23:35:52 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
+2020-04-19 23:35:53 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-19 23:35:53 WARN  XmlWebApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\bill-mvc\bill-web\target\classes\com\wgz\bill\controller\LoginController.class]: Post-processing failed of bean type [class com.wgz.bill.controller.LoginController] failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [com.wgz.bill.controller.LoginController] for resource metadata: could not find class that it depends on
+2020-04-19 23:35:53 ERROR ContextLoader:353 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\bill-mvc\bill-web\target\classes\com\wgz\bill\controller\LoginController.class]: Post-processing failed of bean type [class com.wgz.bill.controller.LoginController] failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [com.wgz.bill.controller.LoginController] for resource metadata: could not find class that it depends on
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:940)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:518)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Failed to introspect bean class [com.wgz.bill.controller.LoginController] for resource metadata: could not find class that it depends on
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:334)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:935)
+	... 21 more
+Caused by: java.lang.NoClassDefFoundError: Lcom/wgz/bill/dao/TestDao;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:710)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:652)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:351)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:330)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: com.wgz.bill.dao.TestDao
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	... 30 more
+2020-04-19 23:40:06 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2020-04-19 23:40:06 INFO  XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sun Apr 19 23:40:06 CST 2020]; root of context hierarchy
+2020-04-19 23:40:06 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
+2020-04-19 23:40:06 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-19 23:40:07 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 768 ms
+2020-04-19 23:40:07 INFO  DispatcherServlet:489 - FrameworkServlet 'springMVC': initialization started
+2020-04-19 23:40:07 INFO  XmlWebApplicationContext:578 - Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Sun Apr 19 23:40:07 CST 2020]; parent: Root WebApplicationContext
+2020-04-19 23:40:07 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-04-19 23:40:07 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-19 23:40:07 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/auth/code]}" onto public void com.wgz.bill.controller.AuthCodeController.getCode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.io.IOException
+2020-04-19 23:40:07 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/upload]}" onto public java.lang.String com.wgz.bill.controller.FileUpload.fileUpload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-04-19 23:40:07 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/download]}" onto public org.springframework.http.ResponseEntity<byte[]> com.wgz.bill.controller.FileUpload.fileDowndload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-04-19 23:40:07 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/bill-web]}" onto public java.lang.String com.wgz.bill.controller.HomePageController.homePage()
+2020-04-19 23:40:07 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/login/login]}" onto public java.lang.String com.wgz.bill.controller.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-19 23:40:07 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/hello],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.wgz.bill.controller.TestController.Test()
+2020-04-19 23:40:07 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Sun Apr 19 23:40:07 CST 2020]; parent: Root WebApplicationContext
+2020-04-19 23:40:07 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Sun Apr 19 23:40:07 CST 2020]; parent: Root WebApplicationContext
+2020-04-19 23:40:07 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/bill-web] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-04-19 23:40:07 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-04-19 23:40:08 INFO  DispatcherServlet:508 - FrameworkServlet 'springMVC': initialization completed in 823 ms
+2020-04-19 23:44:36 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2020-04-19 23:44:36 INFO  XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sun Apr 19 23:44:36 CST 2020]; root of context hierarchy
+2020-04-19 23:44:37 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
+2020-04-19 23:44:37 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-19 23:44:37 WARN  XmlWebApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\bill-mvc\bill-web\target\classes\com\wgz\bill\controller\LoginController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wgz.bill.controller.LoginController]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2020-04-19 23:44:37 ERROR ContextLoader:353 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\bill-mvc\bill-web\target\classes\com\wgz\bill\controller\LoginController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wgz.bill.controller.LoginController]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.wgz.bill.controller.LoginController]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1098)
+	... 22 more
+Caused by: java.lang.NullPointerException
+	at com.wgz.bill.controller.LoginController.<init>(LoginController.java:23)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 24 more
+2020-04-19 23:45:42 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2020-04-19 23:45:42 INFO  XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sun Apr 19 23:45:42 CST 2020]; root of context hierarchy
+2020-04-19 23:45:42 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
+2020-04-19 23:45:42 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-19 23:45:43 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 632 ms
+2020-04-19 23:45:43 INFO  DispatcherServlet:489 - FrameworkServlet 'springMVC': initialization started
+2020-04-19 23:45:43 INFO  XmlWebApplicationContext:578 - Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Sun Apr 19 23:45:43 CST 2020]; parent: Root WebApplicationContext
+2020-04-19 23:45:43 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-04-19 23:45:43 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-19 23:45:43 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/auth/code]}" onto public void com.wgz.bill.controller.AuthCodeController.getCode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.io.IOException
+2020-04-19 23:45:43 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/upload]}" onto public java.lang.String com.wgz.bill.controller.FileUpload.fileUpload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-04-19 23:45:43 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/download]}" onto public org.springframework.http.ResponseEntity<byte[]> com.wgz.bill.controller.FileUpload.fileDowndload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-04-19 23:45:43 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/bill-web]}" onto public java.lang.String com.wgz.bill.controller.HomePageController.homePage()
+2020-04-19 23:45:43 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/login/login]}" onto public java.lang.String com.wgz.bill.controller.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-19 23:45:43 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/hello],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.wgz.bill.controller.TestController.Test()
+2020-04-19 23:45:43 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Sun Apr 19 23:45:43 CST 2020]; parent: Root WebApplicationContext
+2020-04-19 23:45:43 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Sun Apr 19 23:45:43 CST 2020]; parent: Root WebApplicationContext
+2020-04-19 23:45:43 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/bill-web] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-04-19 23:45:43 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-04-19 23:45:43 INFO  DispatcherServlet:508 - FrameworkServlet 'springMVC': initialization completed in 783 ms
+2020-04-19 23:59:19 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2020-04-19 23:59:19 INFO  XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sun Apr 19 23:59:19 CST 2020]; root of context hierarchy
+2020-04-19 23:59:19 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
+2020-04-19 23:59:20 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-19 23:59:20 WARN  XmlWebApplicationContext:546 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\bill-mvc\bill-web\target\classes\com\wgz\bill\controller\LoginController.class]: Post-processing failed of bean type [class com.wgz.bill.controller.LoginController] failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [com.wgz.bill.controller.LoginController] for resource metadata: could not find class that it depends on
+2020-04-19 23:59:20 ERROR ContextLoader:353 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'loginController' defined in file [D:\bill-mvc\bill-web\target\classes\com\wgz\bill\controller\LoginController.class]: Post-processing failed of bean type [class com.wgz.bill.controller.LoginController] failed; nested exception is java.lang.IllegalStateException: Failed to introspect bean class [com.wgz.bill.controller.LoginController] for resource metadata: could not find class that it depends on
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:940)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:518)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:446)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:328)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:107)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Failed to introspect bean class [com.wgz.bill.controller.LoginController] for resource metadata: could not find class that it depends on
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:334)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:287)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:935)
+	... 21 more
+Caused by: java.lang.NoClassDefFoundError: Lcom/wgz/bill/service/ITestDaoService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:710)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:652)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:351)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:330)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: com.wgz.bill.service.ITestDaoService
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1702)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1547)
+	... 30 more
+2020-04-20 00:00:02 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2020-04-20 00:00:02 INFO  XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Mon Apr 20 00:00:02 CST 2020]; root of context hierarchy
+2020-04-20 00:00:03 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
+2020-04-20 00:00:03 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-20 00:00:03 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 655 ms
+2020-04-20 00:00:03 INFO  DispatcherServlet:489 - FrameworkServlet 'springMVC': initialization started
+2020-04-20 00:00:03 INFO  XmlWebApplicationContext:578 - Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Apr 20 00:00:03 CST 2020]; parent: Root WebApplicationContext
+2020-04-20 00:00:03 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-04-20 00:00:03 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-20 00:00:03 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/auth/code]}" onto public void com.wgz.bill.controller.AuthCodeController.getCode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.io.IOException
+2020-04-20 00:00:03 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/upload]}" onto public java.lang.String com.wgz.bill.controller.FileUpload.fileUpload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-04-20 00:00:03 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/download]}" onto public org.springframework.http.ResponseEntity<byte[]> com.wgz.bill.controller.FileUpload.fileDowndload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-04-20 00:00:03 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/bill-web]}" onto public java.lang.String com.wgz.bill.controller.HomePageController.homePage()
+2020-04-20 00:00:03 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/login/login]}" onto public java.lang.String com.wgz.bill.controller.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-20 00:00:03 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/hello],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.wgz.bill.controller.TestController.Test()
+2020-04-20 00:00:04 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Apr 20 00:00:03 CST 2020]; parent: Root WebApplicationContext
+2020-04-20 00:00:04 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Mon Apr 20 00:00:03 CST 2020]; parent: Root WebApplicationContext
+2020-04-20 00:00:04 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/bill-web] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-04-20 00:00:04 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-04-20 00:00:04 INFO  DispatcherServlet:508 - FrameworkServlet 'springMVC': initialization completed in 770 ms
+2020-04-25 21:10:22 INFO  ContextLoader:307 - Root WebApplicationContext: initialization started
+2020-04-25 21:10:22 INFO  XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Sat Apr 25 21:10:22 CST 2020]; root of context hierarchy
+2020-04-25 21:10:22 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring.xml]
+2020-04-25 21:10:23 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-25 21:10:23 INFO  ContextLoader:347 - Root WebApplicationContext: initialization completed in 663 ms
+2020-04-25 21:10:23 INFO  DispatcherServlet:489 - FrameworkServlet 'springMVC': initialization started
+2020-04-25 21:10:23 INFO  XmlWebApplicationContext:578 - Refreshing WebApplicationContext for namespace 'springMVC-servlet': startup date [Sat Apr 25 21:10:23 CST 2020]; parent: Root WebApplicationContext
+2020-04-25 21:10:23 INFO  XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [springmvc.xml]
+2020-04-25 21:10:23 INFO  AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-25 21:10:23 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/auth/code]}" onto public void com.wgz.bill.controller.AuthCodeController.getCode(javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpSession) throws java.io.IOException
+2020-04-25 21:10:23 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/upload]}" onto public java.lang.String com.wgz.bill.controller.FileUpload.fileUpload(org.springframework.web.multipart.MultipartFile,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-04-25 21:10:23 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/file/download]}" onto public org.springframework.http.ResponseEntity<byte[]> com.wgz.bill.controller.FileUpload.fileDowndload(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws org.apache.commons.fileupload.FileUploadException,java.io.IOException
+2020-04-25 21:10:23 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/bill-web]}" onto public java.lang.String com.wgz.bill.controller.HomePageController.homePage()
+2020-04-25 21:10:23 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/login/login]}" onto public java.lang.String com.wgz.bill.controller.LoginController.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-25 21:10:23 INFO  RequestMappingHandlerMapping:527 - Mapped "{[/hello],produces=[application/json;charset=UTF-8]}" onto public java.lang.String com.wgz.bill.controller.TestController.Test()
+2020-04-25 21:10:23 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Sat Apr 25 21:10:23 CST 2020]; parent: Root WebApplicationContext
+2020-04-25 21:10:23 INFO  RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'springMVC-servlet': startup date [Sat Apr 25 21:10:23 CST 2020]; parent: Root WebApplicationContext
+2020-04-25 21:10:24 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/bill-web] onto handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-04-25 21:10:24 INFO  SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2020-04-25 21:10:24 INFO  DispatcherServlet:508 - FrameworkServlet 'springMVC': initialization completed in 744 ms
+2020-04-25 21:11:09 INFO  FileUpload:382 - info file
+2020-04-25 21:11:09 ERROR FileUpload:382 - error file
+2020-04-25 21:11:09 WARN  FileUpload:382 - warn file

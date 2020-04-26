@@ -1,0 +1,27 @@
+css 定位
+普通流
+    按照在html中的排序排布
+position
+    static
+        设置偏移量是没有任何效果的
+    relative
+        相对于前面的元素的位置,如有两个div，则它相对的就是前面的同济元素的位置
+        top
+        left
+        right
+        boottom
+    absolute
+        绝对布局，相当于从html页面扣出来，他的偏移量就是相对于父元素,对于子div，相对的就是父div，对最外的div相对的就是
+        body
+        top
+        left
+        right
+        boottom
+    fixed
+      固定的，相对的是浏览器的页面
+
+overflow
+clip
+vertical-align
+z-index
+    谁的值大，谁在上面,默认为0
